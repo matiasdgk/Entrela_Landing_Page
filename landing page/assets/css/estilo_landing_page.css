@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Righteous', cursive;
+    background-color: rgb(24, 24, 24);
+    
+
+}
+
+.hero {
+    background-image:url("../img/fondo_2.jpg");
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+    
+.textos-hero{
+    height: 500px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.textos-hero h1{
+    font-size: 55px;
+    color: rgba(225,179,117)
+
+}
+.textos-hero h{
+    font-size: 55px;
+    color: rgba(225,179,117)
+}
+
+
+
+.textos-hero p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.parrafo{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.textos-hero a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background:  rgb(255, 255, 255);
+    border-radius: 8px;
+    color: black;
+}
+
+.svg-hero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Estilos generales */
+
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1300px;
+    overflow: hidden;
+    margin: auto;
+    padding:  80px 0;
+    
+}
+.contenedor{
+    padding: 80px 0;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo.left{
+    color: rgba(225,179,117);
+    text-align: left;
+}
+
+.titulo.right{
+    text-align: right;
+    
+}
+
+/* Reseña */
+
+.website{
+    display: flex;
+    justify-content:center;
+    
+}
+
+.website img{
+    width: 30%;
+    height: 10%;
+    margin-right:  5%;
+
+}
+
+.website .contenedor-textos-main{
+    width: 40%;
+}
+
+.titulo{
+
+    color: rgb(255, 255, 255);
+}
+
+
+.parrafo{
+    text-align:justify;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+/* Música */
+
+.content-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.card:hover{
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card i{
+    margin: 30px 0 20px 0;
+    color:rgba(225,179,117);
+    font-size: 50px;
+}
+
+/* Bibliografía */
+
+.contenedor-2,
+.wave-contenedor-2{
+    width: 90%;
+    max-width: 1300px;
+    overflow:hidden;
+    margin: auto;
+    padding:  80px 0;
+    
+}
+.contenedor-2{
+    padding: 80px 0;
+}
+
+.website-2{
+    display: flex;
+    justify-content:center;
+    
+}
+
+.website-2 img{
+    width: 30%;
+    height: 10%;
+    margin-right:  5%;
+
+}
+
+.website-2 .contenedor-textos-main{
+    width: 40%;
+}
+
+
+@media screen and (max-width:800px){
+    .textos-hero h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    /* estilos generales */
+    .titulo{
+        font-size: 35px;
+        
+    }
+
+    .titulo.left{
+        text-align: center;
+    }
+
+    .info p{
+        text-align: center;
+    }
+
+    /* section */
+
+    .website{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website img{
+        width: 100%;
+    }
+
+    .website .contenedor-textos-main{
+        width: 100%;
+    }
+    
+    .website-2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website-2 img{
+        width: 100%;
+    }
+
+    .website-2 .contenedor-textos-main{
+        width: 100%;
+    }
+
+
+}
+
